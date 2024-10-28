@@ -3,6 +3,12 @@
 # This is a simple Hello World program
 print("Hello, World!")
 
-# saber como abrir um arquiv.txt e abrir em uma lista oi
+# Abrindo o arquivo e lendo seu conteúdo em uma lista
+with open(aleatorio_1k, 'r') as file:
+    linhas = file.readlines()
 
-print("daora")
+# Removendo caracteres de nova linha
+linhas = [linha.strip() for linha in linhas]
+
+print(linhas)
+
